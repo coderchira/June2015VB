@@ -10,16 +10,19 @@
         '           fixed size
         '           Stack(memory management)
         '           faster
+        '           dispose on their own
         '       Reference Type
         '           they vary in size
         '           heap(memory management)
         '           slower
+        '           dispose explicitly
         '     Constants -- Do not change value
         '       Pi etc.
 
         'Lifecycle of a variable
         '  Declaration
         '  Assign a value /use 
+        '  Dispose
 
         'Declaring a variable
         'Dim ~ Dimension
@@ -109,6 +112,19 @@
         str = "20"
         strAsNum = CInt(str)
 
+        'reference type variable
+        Dim coll As New Collection 'no. of different items
+        'it can hold native type variable
+        coll.Add("Ruchira") ' 1th position
+        coll.Add(20)    '2nd position and so on
+        coll.Add(True)
+        coll.Add("Day 2")
+        Console.WriteLine("The items in collection are {0}, {1},{2},{3}", coll.Item(1), coll.Item(2), coll.Item(3), coll.Item(4))
+        Console.ReadLine()
+
+        coll.Remove(2)
+        Console.WriteLine("The items in collection are {0}, {1},{2}", coll.Item(1), coll.Item(2), coll.Item(3))
+        Console.ReadLine()
     End Sub
 
 End Module
