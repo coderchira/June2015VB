@@ -15,9 +15,16 @@
     '   Call
     '       from other block
 
+    'Module level variable
+    Dim myVar As Integer
     'Declare a function
-    Function MyFunc() As Integer
+    Function FirstFunction() As Integer
         'Implementation
+        'Local variable
+        Dim myNum As Integer
+        myNum = 20
+
+        myVar = 10
         Return 0
     End Function
 
@@ -25,6 +32,7 @@
         'Body
         'Call
         DoThisAll()
+        myVar = 30
         Return True
     End Function
 
