@@ -19,6 +19,7 @@
         '     Constants -- Do not change value
         '       Pi etc.
 
+        LogicDemo.Calculation(1, 25.0, "Ruchira")
         'Lifecycle of a variable
         '  Declaration
         '  Assign a value /use 
