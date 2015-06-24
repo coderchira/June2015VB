@@ -16,15 +16,16 @@
     '       from other block
 
     'Module level variable
-    Dim myVar As Integer
+    Dim myVar As Integer = 10
+
     'Declare a function
     Function FirstFunction() As Integer
         'Implementation
         'Local variable
-        Dim myNum As Integer
-        myNum = 20
+        Dim myNum As Integer = 20
 
-        myVar = 10
+
+        myVar = 15
         Return 0
     End Function
 
