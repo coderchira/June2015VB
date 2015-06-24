@@ -130,6 +130,15 @@
             Console.WriteLine("This will be run at least once")
         Loop While age = 20
 
+        'for each
+        Dim coll As New Collection
+        For index = 1 To 5
+            coll.Add(index)
+        Next
+
+        For Each item In coll
+            Console.WriteLine(item)
+        Next
         Return 0
     End Function
 
